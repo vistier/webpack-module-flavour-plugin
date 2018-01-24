@@ -15,15 +15,18 @@ Let's say you want to require one of two flavours of popup component on mobile a
 
 You'll have to do three things to achieve that.
 
-First: name flavoured modules by the following scheme `<module-name>.<flavour>.<extension>`
+First: name flavoured modules by the following scheme `<module-name>.<flavour>.<extension>` or `src-<flavour>/<other>/<module-name>.<extension>`
 
 ```
 
-    /root
+    /src
      |-/flavoured-popup
      |  |-popup.mobile.js
      |  |-popup.desktop.js
      |-common-module.js
+    /src-mobile
+     |-/flavoured-popup
+     |  |-popup.js 
 
 ```
 
